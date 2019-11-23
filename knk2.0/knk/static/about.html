@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kops & Kalla</title>
+    <link rel="stylesheet" type="text/css" href="/static/style/menu-style.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/style/page-style.css"/>
+    <link rel="shortcut icon" href="icon.jpg"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;initial-scale=1.0;">
+  </head>
+  <body>
+    <audio autoplay="true" loop="true">
+      <source src="/static/audio/papaduru.ogg" type="audio/ogg">
+    </audio>
+    <!---About HTML Begins Here-->
+    <div class="KnK">
+      <p>KOPS AND KALLA</p>
+    </div>
+    <div class="thankyou">
+      <p> We sincerely appreciate the time you've taken to come here, to find out about us. <br/>
+        Words cannot express how grateful we are to you, because we are aware that you could be doing a million thigns with your time right now.<br/>All we have is gratitude towards you, and for trying out Kops and Kalla.<br/>
+        To donate , go to <a href="http://www.googlefeud.com">www.wehavenomoney.com</a>
+      </p>
+    </div>
+    <div class="meetthecoders">
+      <h1 class="meetthecoders">MEET THE CODERS</h1>
+      <div class="people">
+        <div class="keeru">
+          <img src="/static/hitman.jpg">
+          <p>1. Hithendra Laxchitreadurga BC. A very very sweet human, with a love for anything that walks, talks or mocks. Prides himself on the ability to charm his way through anyone, and probably values himself too much. <blockquote>USN : 01FB16ECS137</blockquote></p><br>
+        </div><br>
+        <div class="kaushy">
+          <img src="/static/kaushy.jpg">
+          <p>2. Kaushik Ravichandran Ashwin .<br>A humble human being, with an ardenngsdhgisdhifgdsiufgiudgfiugsdiufgdsiugfidsgifgdsigfidsgidsgigfit love for clumsiness, he prides himself on being the only person to be able to fall up the stairs. <blockquote>USN : 01FB16ECS160</blockquote></p><br/>
+        </div><br>
+        <div class="kp">
+          <img src="/static/KP.jpg">
+          <p>3. Kevin Paul Podiyan .<br>A not humble human being.gfdgiusdhighsdiuhgids uhiudfsuigds iuhgdfsiuhuidsfhfiuhd fsiugiusdhgfiuhdfsi ughidufhgudfsiu heelo from the other side you must have gfishgiudsfhgi udfsghiufugiud f<blockquote>USN : 01FB16ECS166</blockquote></p><br>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <!---About HTML Ends Here-->
+    <!---Menu HTML Begins Here-->
+    <canvas id="demo-canvas"></canvas>
+    <div class="button_container" id="toggle">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+     <div class="overlay" id="overlay">
+       <nav>
+         <ul>
+           <li style="" ><a href="/">Home</a></li>
+             <li><a href="/how">How To Play</a></li>
+             <li><a href="/about">About Us</a></li>
+             <li style=""><a href="/play/game">Lobby</a></li>
+         </ul>
+       </nav>
+    </div>
+      <script src='/static/jquery.min.js'></script> 
+    <!---Menu HTML Ends Here-->
+    <footer style="text-align:center">
+      <p>2017 © KnK inc. All Rights Reserved</p>
+    </footer>
+  </body>
+  <!---Menu JS Begins Here-->
+  <script>
+        $('#toggle').click(function() {
+        $(this).toggleClass('active');
+        $('#overlay').toggleClass('open');
+        });
+  </script>
+  <!---Menu JS Ends Here-->
+</html>

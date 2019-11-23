@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Kops and Kalla</title>
+    <link rel="stylesheet" type="text/css" href="/static/style/page-style.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/style/menu-style.css"/>
+    <link rel="shortcut icon" href="icon.jpg"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;initial-scale=1.0;">
+  </head>
+  <body>
+    <audio autoplay="true" loop="true">
+      <source src="/static/audio/papaduru.ogg" type="audio/ogg">
+    </audio>
+    <div class="KnK">
+      <p>KOPS AND KALLA</p>
+    </div>
+    
+    <div class="playerswaiting">
+        <h1 class="heading" onclick="toLobby()">Play Now!</h1>
+        <form id="startForm" action="/play/game" method="GET" >
+        <input type="submit" value="" />
+        </form>
+    </div>  
+    
+      <canvas id="demo-canvas"></canvas>
+      <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+       <div class="overlay" id="overlay">
+         <nav>
+           <ul>
+            <li style="" ><a href="/">Home</a></li>
+             <li><a href="/how">How To Play</a></li>
+             <li><a href="/about">About Us</a></li>
+             <li style=""><a href="/play/game">Lobby</a></li>
+         </ul>
+         </nav>
+      </div>
+      <script src='/static/jquery.min.js'></script> 
+      <!---Menu HTML Ends Here-->
+      <footer style="text-align:center;">
+      2017 © KnK inc. All Rights Reserved
+    </footer>
+  </body>
+  <!---Menu JS Begins Here-->
+   <script>
+      $('#toggle').click(function() {
+      $(this).toggleClass('active');
+      $('#overlay').toggleClass('open');
+      });
+      function toLobby(){
+        document.getElementById("startForm").submit();
+      }
+   </script>
+   
+   <!---Menu JS Ends Here-->
+
+</html>
