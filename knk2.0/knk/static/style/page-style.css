@@ -1,0 +1,266 @@
+body{
+  background-image:url("bground.gif");
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  opacity: 1;
+  background-blend-mode:soft-light;
+  background-color: rgba(0,0,0,0.3);
+}
+h1.heading{
+
+  font-family:'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  margin:auto;
+  text-align:center;
+  padding:10px;
+}
+@keyframes display{
+  0%{bottom:-150%;}
+  100%{bottom:0%;}
+}
+@keyframes display2{
+  0%{bottom:-150%;}
+  100%{bottom:5%;}
+}
+@keyframes display3{
+  0%{bottom:-90%;}
+  100%{bottom:87%;}
+}
+@keyframes display5{
+  0%{bottom:-50%;}
+  100%{bottom:0%;}
+}
+div.data{
+  font-family:'Raleway',sans-serif;
+  margin:auto;
+  font-weight: lighter;
+  text-align:center;
+}
+
+div.total{
+  animation-delay: 0s;
+  animation-name: display3;
+  animation-duration:2.8s;
+  background-image: radial-gradient(#D3D3D3 15%,transparent 65%);
+  animation-fill-mode: forwards;
+  margin:auto;
+  float:left;
+  overflow:hidden;
+  position:relative;
+  border-top: solid;
+  border-radius: 20px;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+div.total2{
+  animation-delay: 0s;
+  animation-name: display3;
+  animation-duration:2.8s;
+  background-image: radial-gradient(#D3D3D3 15%,transparent 65%);
+  animation-fill-mode: forwards;
+  margin:auto;
+  float:left;
+  overflow:hidden;
+  position:relative;
+  border-top: solid;
+  border-radius: 20px;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+div.howto{
+  background-image: radial-gradient(#D3D3D3 15%,transparent 65%);
+  animation-delay: 0s;
+  animation-name: display;
+  animation-duration:2.8s;
+  position:relative;
+  animation-fill-mode: forwards;
+  font-family:'Raleway',sans-serif;
+  font-weight: lighter;
+  margin-top:10px;
+  float:left;
+  border-top: solid;
+  border-radius: 20px;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: black;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align:center;
+}
+input{
+  opacity:1;
+  border: none;
+  padding:5px;
+  background-color: inherit;
+  margin-left:40px;
+}
+#LogInButton{
+  opacity:1;
+  border:none;
+  padding:20px;
+  margin-left:75px;
+  text-align:center;
+  background-color: inherit;
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight: bold; 
+}
+@keyframes example {
+  0% {background-position:100% 20%;
+      text-indent:-500px;
+      text-overflow: hidden;}
+  25%{background-position: 50% 20%;
+      text-indent: -500px;}
+  100%{background-color: green;
+      background-position: 0% -11%;
+      text-indent: 0px;}
+}
+div.KnK{
+  overflow: hidden;
+  background-image: url("loading.gif");
+  background-size: 250% 250%;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
+  margin-left:500px;
+  margin-right:500px;
+  margin-top:5px;
+  border-radius:5px;
+  border-width: thin;
+  border-color: ruby;
+  border-style: solid;
+  font-family:'Barlow',sans-serif;
+  font-weight: bold;
+}
+div[class="KnK"]{
+  text-align:center;
+}
+div.thankyou{
+  background-image: radial-gradient(#D3D3D3 30%,transparent 65%);
+  animation-delay: 0s;
+  animation-name: display;
+  animation-duration:2.8s;
+  position:relative;
+  animation-fill-mode: forwards;
+  font-family:'Raleway',sans-serif;
+  margin:auto;
+  margin-left:500px;
+  font-weight: lighter;
+  margin-top:10px;
+  border-top: solid;
+  border-radius: 20px;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: black;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align:center;
+}
+h1.meetthecoders{
+  padding:25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin:auto;
+}
+div.people{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+div.kaushy{
+  font-family: 'Barlow Semi Condensed',sans-serif;
+  font-style: oblique;
+  background-color:#D3D3D3;
+  display:block;
+  float:right;
+  border-top: solid;
+  border-bottom: solid;
+  border-radius: 100px;
+  border-color: ruby;
+  border-width: thin;
+  padding:30px;
+}
+div.kp{
+  font-family: 'Barlow Semi Condensed',sans-serif;
+  font-style: oblique;
+  background-color:#FBFBFF;
+  float:left;
+  display:block;
+  border-top: solid;
+  border-bottom: solid;
+  border-radius: 100px;
+  border-color: ruby;
+  border-width: thin;
+  padding:30px;
+}
+div.kp img{
+  border-radius: 100px;
+  float:left;
+  width:150px;
+  height:150px;
+}
+div.kaushy img{
+  border-radius: 100px;
+  float:right;
+  width:150px;
+  height:150px;
+}
+div.keeru{
+  font-family: 'Barlow Semi Condensed',sans-serif;
+  font-style: oblique;
+  background-color:#FBFBFF;
+  float:left;
+  display:block;
+  border-top: solid;
+  border-bottom: solid;
+  border-radius: 100px;
+  border-color: ruby;
+  border-width: thin;
+  padding:30px;
+}
+div.keeru img{
+  border-radius: 100px;
+  float:left;
+  width:150px;
+  height:150px;
+}
+div.playerswaiting{
+  animation-delay: 0s;
+  animation-name: display5;
+  animation-duration:2.8s;
+  background-image: radial-gradient(#D3D3D3 15%,transparent 65%);
+  animation-fill-mode: forwards;
+  margin:auto;
+  margin-top:20px;
+  position:relative;
+  border-top: solid;
+  border-radius: 20px;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: black;
+  margin-left: 25%;
+  margin-right: 10px;
+  text-align:center;
+  width:50%;
+}
+button[name="playbutton"]{
+  cursor:pointer;
+  opacity:1;
+  border:none;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-size:20px;
+  background-color: inherit;
+  font-family:'Barlow Semi Condensed',sans-serif;
+}
+
+footer{
+clear:both;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Kops and Kalla</title>
+    <link rel="stylesheet" type="text/css" href="/static/style/page-style.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/style/menu-style.css"/>
+    <link rel="shortcut icon" href="icon.jpg"/>
+    <link href="/static/jqv/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="/static/jqv/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/jqv/jquery.vmap.js"></script>
+    <script type="text/javascript" src="/static/jqv/maps/jquery.vmap.world.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/static/jqv/country_coords.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+  <body>
+    
+    <div class="KnK">
+      <p>KOPS AND KALLA</p>
+    </div>
+    <div id="lockAlert" style="background-color: red;display:none"><span style="color:white">You've been locked for 3 seconds!!</span></div>
+    <!---Lobby HTML Begins Here-->
+    <div class="playerswaiting">
+      <form id="playerForm" action="" method="">
+        <h1 class="heading">Lobby</h1>
+          <h3>Enter Name: </h3>
+          <input id="inputUsername" type="text" name="username" placeholder="Enter a username" value = "" required>
+          <h3>Enter Player Type:</h3>
+          <input id="inputType" type="text" name="type" placeholder="kop or kalla" value = "" required>
+          </form>
+
+          <div class="play">
+            <button id="startButton" style="cursor:pointer;border:2px solid black;border-radius:25px;">Play!</button>
+          </div>
+          
+    </div>  
+        <div id="winStatusDiv" style="display:none" class="playerswaiting">
+      
+        <h1 id="winStatus" class="heading"></h1>
+
+    </div> 
+<div id="vmap" style="width: 100%; height: 100%;display:none;float:left"></div>
+    
+    <audio id="pachao" controls style="display:none">
+  <source  src="/static/kp.ogg" type="audio/ogg">
+</audio>
+    <!---Lobby HTML Ends Here-->
+    <!---Menu HTML Begins Here-->
+      <canvas id="demo-canvas"></canvas>
+      <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+       <div class="overlay" id="overlay">
+         <nav>
+           <ul>
+            <li style="" ><a href="/">Home</a></li>
+             <li><a href="/how">How To Play</a></li>
+             <li><a href="/about">About Us</a></li>
+             <li style=""><a href="/play/game">Lobby</a></li>
+         </ul>
+         </nav>
+      </div>
+      <!--
+      <script src='/static/jquery.min.js'></script> -->
+      <!---Menu HTML Ends Here-->
+      <footer style="text-align:center;">
+      2017 © KnK inc. All Rights Reserved
+    </footer>
+  </body>
+  <script src="/static/game.js"></script>
+  <!---Menu JS Begins Here-->
+   <script>
+      $('#toggle').click(function() {
+      $(this).toggleClass('active');
+      $('#overlay').toggleClass('open');
+      });
+   </script>
+   
+   
+   <!---Menu JS Ends Here-->
+
+</html>

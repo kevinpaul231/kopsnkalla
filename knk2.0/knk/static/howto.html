@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Kops & Kalla</title>
+    <link rel="stylesheet" type="text/css" href="/static/style/page-style.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/style/menu-style.css"/>
+    <link rel="shortcut icon" href="icon.jpg"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;initial-scale=1.0;">
+  </head>
+  <body>
+    <audio autoplay="true" loop="true">
+      <source src="/static/audio/papaduru.ogg" type="audio/ogg">
+    </audio>
+    <div class="KnK">
+      <p>KOPS AND KALLA</p>
+    </div>
+    <!---Lobby HTML Ends Here-->
+    <div class="howto">
+        <h1 class="heading">How To Play?</h1>
+        
+<p style="text-align:left;"><strong>Controls</strong><p>
+<ul style="text-align:left;">
+<li>Just use your mouse!</li>
+
+</ul>
+<p style="text-align:left;"><strong>Rules</strong></p>
+<p style="text-align:justify;">
+The game is played between two players, namely the kalla and the kop. The two players start off in the world map, where the kalla attempts to evade the kop by hiding in a continent of his choice. The kalla may at any time, choose to alter his position, even to another continent in an attempt to evade the kop, but with a time delay penalty. The kalla must successfully evade the kop for a certain period of time to win. The kop, aided by audio cues, attempts to catch the hidden kalla, by clicking on the same element of the continent page that the kalla is hidden in. The game will end when either the kop catches the kalla, in which case, the kop wins, or when the kalla succesfully evades the kop for a certain period for time, in which case, the kalla wins.
+</p>
+    </div>
+    <!---Lobby HTML Ends Here-->
+    <!---Menu HTML Begins Here-->
+      <canvas id="demo-canvas"></canvas>
+      <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+       <div class="overlay" id="overlay">
+         <nav>
+           <ul>
+           
+           <li><a href="/">Home</a></li>
+             <li><a href="/how">How To Play</a></li>
+             <li><a href="/about">About Us</a></li>
+             <li style=""><a href="/play/game">Lobby</a></li>
+         </ul>
+         </nav>
+      </div>
+      <script src='/static/jquery.min.js'></script> 
+      <!---Menu HTML Ends Here-->
+    <footer style="text-align:center;">
+      <p>2017 © KnK inc. All Rights Reserved</p>
+    </footer>
+  </body>
+  <!---Menu JS Begins Here-->
+   <script>
+      $('#toggle').click(function() {
+      $(this).toggleClass('active');
+      $('#overlay').toggleClass('open');
+      });
+   </script>
+   <!---Menu JS Ends Here-->
+</html>
